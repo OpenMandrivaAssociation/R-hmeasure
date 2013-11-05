@@ -1,6 +1,8 @@
 %global packname  hmeasure
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
 Version:          1.0
 Release:          1
@@ -39,7 +41,6 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %doc %{rlibdir}/%{packname}/doc
 %doc %{rlibdir}/%{packname}/html
 %doc %{rlibdir}/%{packname}/DESCRIPTION
-%doc %{rlibdir}/%{packname}/NEWS
 %{rlibdir}/%{packname}/INDEX
 %{rlibdir}/%{packname}/NAMESPACE
 %{rlibdir}/%{packname}/Meta
